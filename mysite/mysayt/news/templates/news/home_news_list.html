@@ -9,10 +9,11 @@
 {% endblock %}
 
 {% block content %}
+{{ mixin_prop }}
               {% for item in news %}   <!-- reversed - natijani  teskarisiga chop etadi -->
               <div class="card mb-3">
                   <div class="card-header">         <!-- {{ forloop.counter }}-->
-<!--                    Kategoriya: <a href="{{ item.category.get_absolute_url }}">{{ item.category }}</a>   &lt;!&ndash;{{ item.my_func }}&ndash;&gt;-->
+                    Kategoriya: <a href="{{ item.category.get_absolute_url }}">{{ item.category }}</a>   <!--{{ item.my_func }}-->
                   </div>
                   <div class="card-body">
                     <div class="media">

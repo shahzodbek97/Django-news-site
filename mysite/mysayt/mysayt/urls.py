@@ -22,6 +22,8 @@ from news.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('captcha/', include('captcha.urls')),
     path('', include('news.urls')),  # path('test/', test)
     path('__debug__/', include(debug_toolbar.urls)),
 ]
